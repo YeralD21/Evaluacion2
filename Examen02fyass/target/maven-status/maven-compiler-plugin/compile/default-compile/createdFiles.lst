@@ -1,0 +1,6 @@
+pe\edu\upeu\examen02fyass\Examen02fyass.class
+pe\edu\app\upeu\modelo\ResultadoTO.class
+pe\edu\edu\gui\Maintictactoe.class
+pe\edu\app\upeu\dao\ResultadoDao.class
+pe\edu\app\upeu\dao\ResultadoDaoI.class
+pe\edu\app\upeu\coon\ConnS.class
