@@ -5,7 +5,8 @@
 
 package pe.edu.upeu.examen02fyass;
 
-import pe.edu.edu.gui.Maintictactoe;
+
+import pe.edu.edu.gui.MainTresEnRaya;
 
 /**
  *
@@ -14,7 +15,8 @@ import pe.edu.edu.gui.Maintictactoe;
 public class Examen02fyass {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        new Maintictactoe().setVisible(true);
+        /*new Maintictactoe().setVisible(true);*/
+        new MainTresEnRaya().setVisible(true);
+      
     }
 }

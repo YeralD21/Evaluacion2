@@ -121,16 +121,21 @@ public class Maintictactoe extends javax.swing.JFrame implements ActionListener 
         jLabel5.setText("Jugador 2: ");
 
         jPanelButton.setBackground(new java.awt.Color(153, 204, 255));
+        jPanelButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jPanelButtonMousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelButtonLayout = new javax.swing.GroupLayout(jPanelButton);
         jPanelButton.setLayout(jPanelButtonLayout);
         jPanelButtonLayout.setHorizontalGroup(
             jPanelButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 335, Short.MAX_VALUE)
         );
         jPanelButtonLayout.setVerticalGroup(
             jPanelButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 315, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -283,6 +288,10 @@ public class Maintictactoe extends javax.swing.JFrame implements ActionListener 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jPanelButtonMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanelButtonMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanelButtonMousePressed
+
     /**
      * @param args the command line arguments
      */
@@ -311,8 +320,9 @@ public class Maintictactoe extends javax.swing.JFrame implements ActionListener 
     @Override
     public void actionPerformed(ActionEvent e) {
         for (int i = 0; i < 9; i++) {
-            if(e.getSource()==boton[i])
-                
+            if(e.getSource()==boton[i]){
+                String datax=txtNombreJugador1.getText()+boton[i].getText();
+                txtNombreJugador1.setText(datax);
         }
     }
-}
+}}
