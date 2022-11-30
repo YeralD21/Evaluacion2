@@ -6,7 +6,7 @@
 package pe.edu.upeu.examen02fyass;
 
 
-import pe.edu.edu.gui.MainTresEnRaya;
+import pe.edu.edu.gui.MainTTT;
 
 /**
  *
@@ -16,7 +16,7 @@ public class Examen02fyass {
 
     public static void main(String[] args) {
         /*new Maintictactoe().setVisible(true);*/
-        new MainTresEnRaya().setVisible(true);
+        new MainTTT().setVisible(true);
       
     }
 }
